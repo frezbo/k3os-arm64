@@ -1,0 +1,16 @@
+ssh_authorized_keys:
+- ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIKN9Lm1rFxrusqRvS2PRPa/aO36R5i9dfUQSxTvnV0ZV frezbo@deepwater
+hostname: k3os
+k3os:
+  dns_nameservers:
+  - 8.8.8.8
+  - 1.1.1.1
+  ntp_servers:
+  - 0.us.pool.ntp.org
+  - 1.us.pool.ntp.org
+  labels:
+    region: us-west-1
+    somekey: somevalue
+  k3s_args:
+  - server
+  - "--disable-agent"
